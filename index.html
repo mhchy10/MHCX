@@ -3,19 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three.js TypeScript Template</title>
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-      canvas {
-        display: block;
-      }
-    </style>
+    <title>MHCX — Beyond the Ordinary</title>
+    <link rel="stylesheet" href="/style.css"/>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+
+<div id="app">
+
+  <div id="dimension-transition"></div>
+
+  <div id="cursor-glow"></div>
+
+  <img id="brand-logo" src="/assets/mhcxlogo.jpeg" alt="mhcx logo" />
+
+  
+<nav id="top-nav">
+  <span id="nav-explore">EXPLORE</span>
+  <span id="nav-about">ABOUT</span>  
+  <span id="nav-contact">CONTACT</span>
+</nav>
+
+
+<div id="system-status">
+  <span class="status-dot"></span>
+  <span>CORE SYSTEM ONLINE</span>
+</div>
+
+
+  <div id="hero">
+    <div class="creator-mark" data-text="MEHDI H CHY">MEHDI H CHY</div>
+    <p class="eyebrow">AN EXPERIMENT IN DIGITAL SPACE</p>
+    <h1>Beyond the Ordinary.</h1>
+    <p class="subtitle">Explore what lies beyond the familiar.</p>
+
+    
+<button id="enter-button" type="button">
+  <span>ENTER EXPERIENCE</span>
+  <span class="button-arrow">↗</span>
+</button>
+
+  </div>
+
+  
+<div id="discovery-panel">
+  <button id="close-discovery" type="button" aria-label="Close panel">×</button>
+  <p class="eyebrow">UNKNOWN OBJECT DETECTED</p>
+  <h2>The Core</h2>
+  <p>
+    A crystalline energy source suspended in the depths of mhcx.
+    Its origin remains unknown.
+  </p>
+  <span class="discovery-tag">ARTIFACT // 001</span>
+</div>
+
+
+<div id="portal-panel">
+  <button id="close-portal" type="button" aria-label="Close portal">×</button>
+  <p class="eyebrow">DIMENSIONAL GATEWAY // 001</p>
+  <h2>The Void</h2>
+  <p>
+    Beyond this gateway lies an uncharted dimension.
+    Its secrets remain beyond the known universe.
+  </p>
+
+  
+<button id="enter-portal" type="button">
+  <span>ENTER DIMENSION</span>
+  <span>↗</span>
+</button>
+
+  <span class="discovery-tag">DESTINATION // UNKNOWN</span>
+</div>
+
+
+<!-- mhcx — About panel -->
+<div id="about-panel">
+  
+<button id="close-about" type="button" aria-label="Close panel">×</button>
+
+<p class="eyebrow">SYSTEM PROFILE // 001</p>
+<h2>Beyond the Interface.</h2>
+
+<p>
+  An independent digital universe exploring immersive 3D
+  environments, interactive worlds, and digital creativity.
+</p>
+
+<div class="about-credit">
+  <span class="about-label">CREATED BY</span>
+  <h3>Mehdi Hussain Choudhury</h3>
+  <span class="discovery-tag">CONCEPT // DESIGN // DEVELOPMENT</span>
+</div>
+
+<a
+  id="github-link"
+  class="github-link"
+  href="https://github.com/mhchy10/MHCX"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>⌘ &nbsp; VIEW SOURCE ON GITHUB</span>
+  <span>↗</span>
+</a>
+
+
+</div>
+
+
+<!-- mhcx — Unknown transmission -->
+<div id="contact-panel">
+  <button id="close-contact" type="button" aria-label="Close transmission">×</button>
+
+  <p class="eyebrow">INCOMING SIGNAL // 002</p>
+  <h2>Unknown Origin.</h2>
+
+  <p class="contact-message">
+    A transmission has been detected beyond the mapped universe.
+    Its source remains unidentified.
+  </p>
+
+  <div class="coordinates">
+    <span>SECTOR</span>
+    <strong>07 : XN-49</strong>
+
+    <span>COORDINATES</span>
+    <strong>−42.081 / 118.604</strong>
+
+    <span>SIGNAL STATUS</span>
+    <strong class="signal-status">SIGNAL DETECTED</strong>
+  </div>
+
+  <span class="discovery-tag">TRANSMISSION // UNCLASSIFIED</span>
+</div>
+
+
+<!-- mhcx — Exploration tracker -->
+<div id="exploration-tracker">
+  <span class="eyebrow">VOID EXPLORATION</span>
+  <div class="discovery-count">
+    <span id="discovered-count">00</span>
+    <span class="count-divider">/</span>
+    <span id="total-count">07</span>
+  </div>
+  <span class="tracker-caption">CRYSTALS DISCOVERED</span>
+  
+<div id="discovery-complete">
+  <span class="completion-symbol">✧</span>
+  <span>VOID MASTERED</span>
+  <p>All artifacts have been discovered.</p>
+</div>
+
+</div>
+
+
+<div id="exploration-hint">
+  <span>DRAG</span> ORBIT
+  <span class="hint-divider">/</span>
+  <span>SCROLL</span> ZOOM
+  <span class="hint-divider">/</span>
+  <span>ESC</span> RETURN
+</div>
+
+
+
+</div>
+
+<script type="module" src="/src/main.ts"></script>
   </body>
 </html>
